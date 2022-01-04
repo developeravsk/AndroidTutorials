@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    >
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="100dp"
-        android:id="@+id/result"
-        />
+        android:textSize="100dp" />
 
     <Button
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add 1"
-        android:id="@+id/btn1"/>
+        android:text="Add 1" />
 
     <Button
+        android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Subtract 1"
-        android:id="@+id/btn2"/>
+        android:text="Subtract 1" />
 
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Second Activity" />
+
+    <Button
+        android:id="@+id/btnexternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to External Application" />
+
+    <Button
+        android:id="@+id/btnPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass values between activities" />
 </LinearLayout>
